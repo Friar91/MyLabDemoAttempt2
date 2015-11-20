@@ -15,6 +15,6 @@ public class PennyLoan
         
         public double paymentPerMonth() {
                 double r = (double) amount/ (double) length;
-                return r ;
+                return r/100 ;
         }
 }
