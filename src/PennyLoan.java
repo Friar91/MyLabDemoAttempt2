@@ -2,6 +2,7 @@ public class PennyLoan
 {
         private int amount ; // Amount of loan in pence
         private int length ; // length of subscription in months
+		
         
         public PennyLoan(int a, int l) {
                 amount = a ;
@@ -14,7 +15,8 @@ public class PennyLoan
         */
         
         public double paymentPerMonth() {
+			DecimalFormat df = new DecimalFormat("#.##");
                 double r = (double) amount/ (double) length;
-                return r/100 ;
+                return df.format(r/100) ;
         }
 }
