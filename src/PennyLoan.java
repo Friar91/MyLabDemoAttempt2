@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 public class PennyLoan 
 {
         private int amount ; // Amount of loan in pence
